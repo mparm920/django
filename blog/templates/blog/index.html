@@ -1,4 +1,7 @@
 {% extends 'blog/base.html' %}
 {% block content %}
     <h1>Hello Blog!!</h1>
+    {% for category in categorys %}
+        <li><a href="/post/" >{{ category.name }}</a></li>
+    {% endfor %}
 {% endblock content %}
